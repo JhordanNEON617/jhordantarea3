@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: brown;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    grid-template-rows: auto auto auto auto auto; /* Filas automáticas */
+    gap: 10px;
+    padding: 10px;
+}
+
+.cabezera {
+    grid-column: 1 / span 3; /* Ocupa 3 columnas */
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu {
+    grid-column: 1 / span 3; /* Ocupa 3 columnas */
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contenido1 {
+    grid-column: 1 / span 1; /* Ocupa 1 columna */
+    background-color: lightblue;
+    padding: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contenido2 {
+    grid-column: 2 / span 1; /* Ocupa 1 columna */
+    background-color: lightblue;
+    padding: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.publicidad {
+    grid-column: 3 / span 1; /* Ocupa 1 columna */
+    background-color: lightblue;
+    padding: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.publicidad .hijo{
+    background-color: green;
+    border-radius: 20px;
+    padding: 50px 30px;
+
+}
+
+.pie {
+    grid-column: 1 / span 3; /* Ocupa 3 columnas */
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.redes {
+    grid-column: 1 / span 3; /* Ocupa 3 columnas */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 20px;
+}
+
+.redes button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 30px; 
+    margin-bottom: 8px;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    justify-content: center;
+    left: 20px;
+}
+
+.redes button .facbook {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 30px; 
+    margin-bottom: 20px; 
+    border: none; 
+    border-radius: 5px;
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.redes button .youtube {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 15px 30px; 
+    margin-bottom: 20px; 
+    border: none; 
+    border-radius: 5px;
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+
+
